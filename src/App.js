@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Statistics from "./Components/Statistics/Statistics";
 import Section from "./Components/Section/Section";
@@ -17,8 +17,7 @@ export default function App() {
   const [goodFeedbackCounter, setGoodFeedback] = useState(0);
   const [neutralFeedbackCounter, setNeutralFeedback] = useState(0);
   const [badFeedbackCounter, setBadFeedback] = useState(0);
-  console.log(good);
-  console.log(neutralFeedbackCounter);
+
   const onFeedbackBtnClick = (feedback) => {
     switch (feedback) {
       case good:
